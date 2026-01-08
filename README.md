@@ -58,6 +58,8 @@ The reviewer argues that the vulnerability here should rather be named "hardcode
 
 Enabling debug mode causes a Laravel application to leak source code on error which can lead to source code disclosure, leaking secrets, or other.
 
+Fix: Change APP_DEBUG=true to APP_DEBUG=false in .env.example
+
 ### User Tests
 
 #### Finding 1: Error in Docker Deployment
