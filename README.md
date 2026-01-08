@@ -54,7 +54,9 @@ BUT, depending on the definition of a strong key, this key can be considered str
 
 The reviewer argues that the vulnerability here should rather be named "hardcoded JWT secret key".
 
-#### Finding 6 (Intentional): verifyJwtTokenWeakKey() Uses Supposed Weak Key
+#### Finding 6: Laravel Debug Mode Enabled in Example Laravel .env.example
+
+Enabling debug mode causes a Laravel application to leak source code on error which can lead to source code disclosure, leaking secrets, or other.
 
 ### User Tests
 
