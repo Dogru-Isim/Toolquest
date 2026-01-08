@@ -68,6 +68,10 @@ The reviewer encountered errors in the docker-compose workflow under `/test-tool
 
 It's encouraged to test the docker deployment and to document how end-users can deploy the containers.
 
+#### Finding 2: Signup Allows Passwords Lower than 6 while Signin Does not
+
+This causes a user to successfuly create an account but then lose access to it because they can't log in with a short password
+
 ### Code Design Audit
 
 #### Finding 1: Database Access From Outside Models directory
